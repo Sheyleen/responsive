@@ -2,4 +2,4 @@
 
 ## Project
 
-This exercise is about how to create a site in responsive.
+This exercise is about how to make a site responsive.
