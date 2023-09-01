@@ -1,0 +1,62 @@
+body {
+    background-color: blue;
+  }
+  
+  @media screen and (min-width: 411px) and (max-width: 768px) {
+    body {
+      background-color: green;
+    }
+  }
+  
+  @media screen and (max-width: 410px) {
+    body {
+      background-color: red;
+    }
+  }
+  
+  #small, #medium, #large {
+    display: none;
+  }
+  
+  @media screen and (max-width: 410px) {
+    #small {
+      display: block;
+    }
+    #small p {
+      font-size: 14px;
+    }
+  }
+  
+  @media screen and (min-width: 411px) and (max-width: 768px) {
+    #medium {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    #medium h2{
+        width: 66%;
+    }
+
+    #medium p:first-of-type{
+        width: 33%;
+    }
+
+    #medium p {
+        font-size: 18px;
+    }
+}
+  
+  @media screen and (min-width: 769px) {
+    #large {
+      display: flex;
+    }
+    #large > div {
+      flex: 1;
+    }
+    #large p {
+      font-size: 24px;
+    }
+  }
+  
